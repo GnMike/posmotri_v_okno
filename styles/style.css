@@ -15,7 +15,11 @@ html {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #837d7d;  /* original: #1b1919 */
 }
 
 h1,
@@ -35,4 +39,190 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 1px solid rgb(127, 193, 236); /* отладка */
+}
+
+.result {
+  width: 711px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px dashed rgb(46, 205, 226); */ /*  отладка */
+}
+
+.result__video-container {
+  width: 100%;
+  display: flex;
+  border: 1px dashed rgb(46, 226, 76); /*  отладка */
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-form__fieldset {
+
+}
+
+.search-form__fieldset-title {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+/*
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+*/
+
+.search-form__textfield {
+
+}
+
+/*
+.search-form__textfield::placeholder {
+
+}
+*/
+
+.search-form__checkbox-list {
+
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button search-form__submit-button {
+
+}
+
+.content__details { /* секция справа */
+  width: 399px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 30px;
+  border: 1px dashed yellow;
+}
+
+.title {
+
+  border: 1px dashed rgb(255, 154, 108); /* отладка */
+}
+
+.content__accent {
+
+}
+
+.content__list {
+  width: 399px;
+  height: 298px;
+  border: 1px dashed rgb(255, 154, 108); /* отладка */
+  overflow-y: auto;
+}
+
+.preloader-template {
+
+}
+
+.preloader {
+
+}
+
+.preloader-chasing-squares {
+
+}
+
+.square {
+
+}
+
+.cards-list-item-template {
+
+}
+
+.content__list-item {
+
+}
+
+.content__card-link {
+
+}
+
+.content__video-card {
+
+}
+
+.content__video-card-description-container {
+
+}
+
+.content__video-card-title {
+
+}
+
+.content__video-card-description {
+
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.more-button-template {
+
+}
+
+.button {
+
+}
+
+more-button {
+
+}
+
+.error-template {
+
+}
+
+.error {
+
+}
+
+.error__title {
+
 }
