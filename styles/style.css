@@ -15,7 +15,6 @@ html {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +40,18 @@ ol {
   list-style: none;
 }
 
+/* --------------------- content -------------------------- */
+
 .content {
   width: 1140px;
+  height: 534px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
+
+/* --------------------- result --------------------------- */
 
 .result {
   width: 711px;
@@ -69,26 +73,28 @@ ol {
   object-position: center;
 }
 
+/* --------------------- search-form ---------------------- */
+
 .search-form {
   height: 54px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .search-form__fieldset {
-
+  border: none;
+  width: fit-content;
 }
-
 
 .search-form__fieldset-title {
   font-family: inherit;
-  font-size: 18px;
-  font-weight: 100;
+  font-size: inherit;
+  font-weight: 400;
   line-height: 21.6px;
   text-align: left;
-  margin-left: -2px;
+  margin-bottom: 3px;
 }
 
 .search-form__label {
@@ -99,50 +105,68 @@ ol {
 
 }
 
-/*
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-}
-*/
-
 .search-form__textfield {
-
+  appearance: none;
+  width: 225px;
+  height: 27px;
+  background-color: transparent;
+  padding: 0.13rem 0;
+  font-family: inherit;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: inherit;
+  border: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  letter-spacing: 0.035em;
 }
 
-/*
 .search-form__textfield::placeholder {
-
+  color: white;
+  opacity: 0.7;
 }
-*/
 
 .search-form__checkbox-list {
-
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  margin-bottom: 6px;
 }
 
 .search-form__checkbox {
-
+  cursor: pointer;
+  
 }
 
 .search-form__pseudo-checkbox {
-
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border: 1px solid white;
 }
 
-.button search-form__submit-button {
-
+.button {
+  height: 34px;  
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
-.content__details { /* секция справа */
+.search-form__submit-button {
+  width: 194px;
+}
+
+/* --------------------- content__details ----------------- */
+
+.content__details {
   width: 399px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  row-gap: 22px;
 }
 
 .title {
@@ -152,6 +176,7 @@ ol {
   line-height: 70.5px;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 21px;
 }
 
 .content__accent {
@@ -160,14 +185,14 @@ ol {
 
 .content__list {
   width: 399px;
-  height: 298px;
+  height: 299px;
   position: relative; 
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 
-.preloader-template {
+.preloader-template {  /* template */
 
 }
 
@@ -183,7 +208,7 @@ ol {
 
 }
 
-.cards-list-item-template {
+.cards-list-item-template {  /* template */
 
 }
 
@@ -191,7 +216,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.content__list-item:nth-last-child(2) {
+.content__list-item:nth-last-child(1) {
   margin-bottom: 0;
 }
 
@@ -212,6 +237,7 @@ ol {
 
 .content__video-card-description-container {
   width: 200px;
+  height: 107px;
 }
 
 .content__video-card-title {
@@ -223,41 +249,27 @@ ol {
 }
 
 .content__video-card-description {
-
   line-height: 16.2px;
   font-weight: 400;
-
-/*
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-*/
 }
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
   margin: auto 0;
 }
 
-.more-button-template {
+.more-button-template { /* template */
 
 }
 
-.button {
-
+.more-button {
+  width: 399px;
 }
 
-more-button {
-
-}
-
-.error-template {
+.error-template { /* template */
 
 }
 
@@ -267,4 +279,14 @@ more-button {
 
 .error__title {
 
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
