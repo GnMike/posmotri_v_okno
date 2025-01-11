@@ -208,10 +208,6 @@ input[type='checkbox']:checked + span::after {
 
 /* --------------------- content__details ----------------- */
 
-.content__details {
-  min-inline-size: 416px;
-}
-
 .title {
   font-family: Oswald, sans-serif;
   font-size: 75px;
@@ -277,7 +273,7 @@ input[type='checkbox']:checked + span::after {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .content__video-card-description-container {
